@@ -8,8 +8,11 @@ The software was developed against Kibana version 6.2.1, however it should be wo
 Please customize package.json to match your specific Kibana version.
 
 git clone https://github.com/michimau/kibana-search-widget.git
+
 cd kibana-search-widget
+
 npm install
+
 npm start
 
 ![](https://github.com/michimau/kibana-search-widget/blob/master/images/search.gif)
