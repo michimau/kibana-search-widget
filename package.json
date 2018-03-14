@@ -1,0 +1,19 @@
+{       
+  "name": "search",
+  "version": "6.2.1", 
+  "description": "Search widget plugin",
+  "main": "index.js",
+  "scripts": { 
+    "start": "plugin-helpers start",
+    "test:browser": "plugin-helpers test_browser",
+    "build": "plugin-helpers build",
+    "postinstall": "plugin-helpers postinstall"
+  },
+  "devDependencies": {
+    "@elastic/eslint-config-kibana": "0.0.2",
+    "babel-eslint": "4.1.8",
+    "eslint": "1.10.3",
+    "eslint-plugin-mocha": "1.1.0",
+    "@elastic/plugin-helpers": "5.0.0-beta1"
+  }               
+}
