@@ -1,0 +1,19 @@
+<div ng-controller="searchController" style="width:100%;" class="search-vis">
+    <!-- Bottom row slot, e.g. tabs. -->
+    <form data-transclude-slot="bottomRow" class="search-bar-container" role="form" name="discoverSearch" ng-submit="setQuery()">
+        <div style="width:100%;" class="typeahead ng-isolate-scope" kbn-typeahead="discover" on-select="">
+          <div style="min-width:30px; padding: 1px; width:100%; height:15px;" class="kuiLocalSearch">
+            <div class="kuiLocalSearchAssistedInput">
+              <input style="min-width:30px; padding: 1px; width:100%; height:15px;" parse-query="" name="inputquery" ng-model="querytext" kbn-typeahead-input="" placeholder="" aria-label="Search input" 
+                                    class="kuiLocalSearchInput kuiLocalSearchInput--lucene ng-pristine ng-valid ng-isolate-scope ng-touched" 
+                                    ng-class="{'kuiLocalSearchInput-isInvalid': discoverSearch.$invalid}" autocomplete="off" type="text">
+            </div>
+            <button type="submit" aria-label="Search" class="kuiLocalSearchButton" ng-disabled="discoverSearch.$invalid">
+              <span class="kuiIcon fa-search" aria-hidden="true"></span>
+            </button>
+          </div>
+          <!--<div ng-show="typeahead.isVisible()" ng-mouseenter="typeahead.setMouseover(true);" ng-mouseleave="typeahead.setMouseover(false);" class="typeahead-items ng-hide"></div>-->
+        </div>
+      </form> 
+
+</div>
